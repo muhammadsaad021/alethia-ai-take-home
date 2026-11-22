@@ -19,3 +19,4 @@ finevideo/
 ai_chats/*.jsonl
 .kaggle/
 secrets/
+WRITEUP_GUIDE.md

@@ -14,4 +14,6 @@ The 50-file results are produced on a Kaggle notebook, not on the machine that g
 
 ## Duration
 
-Not measured yet. `kaggle/run_two.py` appends each pair of shards to `/kaggle/working/finevideo_run/timings.json`. After the 50 files finish, add the start-to-finish wall time here, including every resume. Do not invent the number from a single shard.
+`timings (2).json` is the log from `kaggle/run_two.py`. It records 25 successful batches, two shards at a time except the last shard alone. Those batches sum to 112,961 seconds, which is 31 hours 23 minutes. Four failed starts of the same pair add 43 seconds and were rerun.
+
+`train-00014-of-01357.parquet` has a finished JSONL in `partials` and is included in `results.jsonl.gz`, but that shard is not named in the timings file. The 31 hours 23 minutes is the logged wall-clock time, not an estimate from one shard. The one-shard FP16 measurement on `train-00000` was 4,246 seconds and is separate from this total.
