@@ -1,0 +1,150 @@
+## user
+
+<timestamp>Wednesday, Nov 18, 2026, 10:48 PM (UTC+5)</timestamp>
+<user_query>
+C:\Users\Muhammad Saad\Downloads\AI_Engineering_TakeHome_Brief.pdf 
+
+generate me a complete plan for this task, also i am planning to use modal for the compute, give complete plan from start to finish
+</user_query>
+
+## assistant
+
+I'll read the take-home brief and look at the current project so the plan covers the full task, including Modal for compute.
+
+## assistant
+
+The PDF viewer failed, so I’ll extract the brief as text and check how Modal fits the task.
+
+## assistant
+
+The brief is a speed-and-correctness video indexing task. I’ll check current Modal GPU options and a few dataset details so the plan matches how the run will actually be graded.
+
+## assistant
+
+The graded run is a plain Python script on their RTX 4090. Modal is only for building the results and for speed tests. I’ll write the plan around that split.
+
+## user
+
+<timestamp>Wednesday, Nov 18, 2026, 11:02 PM (UTC+5)</timestamp>
+<user_query>
+what are other opetions than modal which are free and is model free tier feasible
+</user_query>
+
+## assistant
+
+Modal’s free credit is enough only if the run stays fast. I’ll check current free GPU limits on Modal, Colab, and Kaggle so the comparison matches what you can actually use this week.
+
+## assistant
+
+Modal’s free tier can finish this job, as long as the script is batched and you stay on a cheap GPU. The $30 Starter credit is enough for one optimized pass over the 50 files, plus a little tuning. It is not enough for a slow per-frame loop.
+
+## What $30 actually buys
+
+Starter is $0 per month and includes $30 of compute, with up to 10 GPUs at once. Past $30, Modal bills your card per second. Set a workspace budget around $25 before the first GPU run.
+
+An L4 with about 8 CPU cores and 16 GB of RAM is roughly $1.30 an hour. $30 covers about 23 hours of that. A T4 is cheaper per hour and slower, so the same credit buys more hours and less work.
+
+The 50 files are about 125 hours of video. At 24–30 fps that is roughly 11–14 million frames:
+
+- Around 200 frames/sec end to end on an L4: about 15–20 GPU-hours. Fits.
+- Around 100 frames/sec: about 30–40 GPU-hours. Over the credit.
+- A plain one-frame-at-a-time loop: several times that. It will spend the credit before the dataset is done.
+
+Running 10 L4s at once does not multiply the bill. Ten GPUs for 2 hours cost the same as one GPU for 20 hours. It only shortens the wait.
+
+Spend the credit in this order: one parquet shard until the results match a careful FP32 run, then the full fan-out once. Keep the FP32 reference on that one shard. Running the slow reference on all 50 files is what blows the budget.
+
+## Free options besides Modal
+
+| Place | What you get | Fit for this task |
+|---|---|---|
+| Kaggle | Phone-verified account. About 30 GPU hours per week, sometimes more. Resets Saturday 00:00 UTC (05:00 PKT). One session up to 12 hours. The free GPU is two T4s, 16 GB each, and one hour on that machine uses one quota hour. 4 CPU cores, 29 GB RAM. | Best free option. This week’s quota plus Saturday’s reset is about 60 hours before Sunday night. Two T4s can split the 50 files. Persistent disk is only 20 GB, and the dataset is about 25 GB, so download one parquet, process it, delete it, and append to the JSONL. |
+| Google Colab free | A T4 when one is available, 16 GB. Sessions up to 12 hours. Idle notebooks disconnect after roughly 90 minutes. Weekly GPU time is unpublished and often lands around 15–30 hours. Heavy use can lock you out of GPUs for a day. | Usable for the first shard and for debugging. A full 50-file run means checkpointing every file to Drive and resuming after disconnects. Drive’s free 15 GB will not hold the dataset, so stream one file at a time. |
+| Your own NVIDIA GPU | Free if the machine has an NVIDIA card and enough disk for 25 GB. | Fine for development. The brief expects the full 50 files on a GPU, and a weak laptop GPU may not finish by Sunday. |
+| University lab machine | Free when you already have access. | Same as owning a GPU. Record the real hardware in `HARDWARE.md`. |
+| RunPod, Vast.ai, Lambda | Pay per minute. Vast.ai is often the cheapest, sometimes well under $0.50/hr for an older GPU. | Not free. Useful only if both free quotas run out. |
+
+Kaggle is the one that can carry the whole 50-file run without a card. Colab is the backup for short sessions. Modal is the one that lets you run up to 10 GPUs in parallel and stop the moment the function returns.
+
+## Which to use
+
+Use Modal if you want the 50 files done in one fan-out and you will keep the job near 200 frames/sec on L4s. Check the bill after the first shard. If that shard costs more than about $0.50, the full run will not fit in $30.
+
+Use Kaggle if you want to avoid a card. Start this week, save a JSONL per parquet outside the notebook, and use Saturday’s quota reset for whatever is left. Point both T4s at different files.
+
+Either machine is valid. They retime your script on their own 4090, so a slower free GPU does not lower the speed score. It only has to produce a correct `results.jsonl.gz` before Sunday 23:55 PKT.
+
+## user
+
+<timestamp>Wednesday, Nov 18, 2026, 11:07 PM (UTC+5)</timestamp>
+<user_query>
+what if we use kaggle along with modal
+</user_query>
+
+## assistant
+
+Use both. Kaggle should do the 50-file run, and Modal should be the place you build and check the script. They only work together if both run the same frozen `run.py`.
+
+Their grader never sees Kaggle or Modal. It runs that one script on a 4090. The two services are only there to produce `results.jsonl.gz`.
+
+## Split the work
+
+Modal’s $30 is about 23 hours of an L4 with 8 CPU cores and 16 GB of RAM. Spend roughly 3–6 of those hours, then stop.
+
+* One parquet shard, FP32, saved as the reference.
+* The fast FP16 path on that same shard, checked with your comparison script.
+* A short batch-size and decoder test.
+* Leave the rest of the credit for Sunday, in case Kaggle does not finish.
+
+Kaggle does the bulk. A phone-verified account gets about 30 GPU hours per week, and the quota resets Saturday at 05:00 PKT. From tonight through Sunday night that is this week’s remaining hours plus another 30. Each session lasts up to 12 hours. The free machine is two T4s, 16 GB each, and one hour on that machine costs one quota hour, so both cards are included.
+
+Point each T4 at a different parquet file:
+
+```text
+CUDA_VISIBLE_DEVICES=0 python run.py --input shard_a --output a.jsonl
+CUDA_VISIBLE_DEVICES=1 python run.py --input shard_b --output b.jsonl
+```
+
+The machine has only 4 CPU cores and 29 GB of RAM for both processes, and `/kaggle/working` keeps about 20 GB. The dataset is about 25 GB, so download one parquet per process, write the JSONL, delete the video, and repeat. Copy each finished JSONL out of the notebook as it completes. A killed session should not make you redo a finished file.
+
+## Keep the results comparable
+
+Freeze one commit before the long run. Same weights, `imgsz=640`, confidence `0.4`, IoU `0.7`, same FP16 or FP32 choice, same letterbox and rotation handling.
+
+Run that exact commit on one shard on a Kaggle T4 and on a Modal L4. Compare the two JSONL files. FP32 should match almost line for line. FP16 can move a few scores across 0.4, so require micro-F1 of at least 0.98 and people exact-match of at least 92% against the FP32 reference on both machines. If the T4 copy fails that and the L4 copy passes, generate the submitted file on Modal only.
+
+Merge by file name. Each video id belongs to one parquet, so the pieces concatenate. Drop a file from the second machine if the first one already produced it.
+
+## What to write down
+
+`HARDWARE.md` should list both machines: Kaggle’s two T4s, 4 cores, 29 GB RAM, and Modal’s L4, plus how many files each one processed and how long each run took. The write-up timings need to be those real numbers.
+
+`run.py` should not import Modal or Kaggle, and it should not download from Hugging Face. Each platform gets a thin launcher around the same command. Keep the Hugging Face token in Kaggle secrets and a Modal secret.
+
+## Schedule
+
+Tonight through Thursday, use Modal for the shard test and freeze the script. Thursday and Friday, run files on Kaggle and download partial JSONL as you go. Saturday after 05:00 PKT, the quota resets; finish whatever is left. Sunday, use the remaining Modal credit only for missing files, then merge, gzip, and lint before 23:55 PKT.
+
+That keeps the free T4 hours on the long job and the paid-by-the-second L4 on the short experiments.
+
+## user
+
+<timestamp>Wednesday, Nov 18, 2026, 11:11 PM (UTC+5)</timestamp>
+<user_query>
+we'll use kaggle instead so modify the plan for that, also we need to make sure all the required tests pass on their machine as well as the code must utilize thier hardware completely for speed
+</user_query>
+
+## assistant
+
+The graded machine is a 4090 with 32 threads, not a Kaggle T4. I’ll revise the plan so Kaggle only produces the 50-file results, and the script itself is built to pass their checks and fill that 4090.
+
+## user
+
+<timestamp>Wednesday, Nov 18, 2026, 11:17 PM (UTC+5)</timestamp>
+<user_query>
+FineVideo indexing on Kaggle, scored on their 4090
+
+Implement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.
+
+To-do's from the plan have already been created. Do not create them again. Mark them as in_progress as you work, starting with the first one. Don't stop until you have completed all the to-dos.
+</user_query>

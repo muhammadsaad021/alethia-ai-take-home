@@ -1,0 +1,966 @@
+pending 50 -> /kaggle/working/finevideo_run
+starting train-00000-of-01357.parquet train-00001-of-01357.parquet
+
+data/train-00000-of-01357.parquet: downloading bytes: ███▋  |  299MB, 25.6MB/s  
+data/train-00000-of-01357.parquet: downloading bytes: █████▌|  460MB, 40.9MB/s  
+data/train-00000-of-01357.parquet: downloading bytes: ██████|  493MB, 43.8MB/s  
+data/train-00000-of-01357.parquet: reconstructing file: 100%|█|  494MB /  494MB,
+
+data/train-00001-of-01357.parquet: downloading bytes: ████▍ |  416MB, 32.3MB/s  
+data/train-00001-of-01357.parquet: reconstructing file:  12%| | 67.1MB /  566MB 
+data/train-00001-of-01357.parquet: downloading bytes: █████▎|  507MB, 45.1MB/s  
+data/train-00001-of-01357.parquet: downloading bytes: ██████|  565MB, 51.3MB/s  
+data/train-00001-of-01357.parquet: reconstructing file: 100%|█|  566MB /  566MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00001-of-01357.parquet:0
+video 1 train-00000-of-01357.parquet:0
+video 2 train-00000-of-01357.parquet:2
+video 2 train-00001-of-01357.parquet:1
+video 3 train-00000-of-01357.parquet:1
+video 4 train-00000-of-01357.parquet:4
+video 5 train-00000-of-01357.parquet:5
+video 3 train-00001-of-01357.parquet:3
+video 4 train-00001-of-01357.parquet:2
+video 5 train-00001-of-01357.parquet:5
+video 6 train-00000-of-01357.parquet:3
+video 7 train-00000-of-01357.parquet:6
+video 8 train-00000-of-01357.parquet:7
+video 6 train-00001-of-01357.parquet:4
+video 9 train-00000-of-01357.parquet:8
+video 10 train-00000-of-01357.parquet:10
+video 7 train-00001-of-01357.parquet:6
+video 8 train-00001-of-01357.parquet:7
+video 9 train-00001-of-01357.parquet:8
+video 11 train-00000-of-01357.parquet:9
+video 12 train-00000-of-01357.parquet:12
+video 10 train-00001-of-01357.parquet:10
+video 13 train-00000-of-01357.parquet:11
+video 14 train-00000-of-01357.parquet:13
+video 11 train-00001-of-01357.parquet:11
+video 12 train-00001-of-01357.parquet:12
+video 15 train-00000-of-01357.parquet:15
+video 16 train-00000-of-01357.parquet:16
+video 13 train-00001-of-01357.parquet:9
+video 14 train-00001-of-01357.parquet:13
+video 15 train-00001-of-01357.parquet:15
+video 16 train-00001-of-01357.parquet:14
+video 17 train-00000-of-01357.parquet:14
+video 18 train-00000-of-01357.parquet:17
+video 17 train-00001-of-01357.parquet:17
+video 19 train-00000-of-01357.parquet:19
+video 20 train-00000-of-01357.parquet:20
+video 21 train-00000-of-01357.parquet:18
+video 18 train-00001-of-01357.parquet:18
+video 19 train-00001-of-01357.parquet:19
+video 20 train-00001-of-01357.parquet:20
+video 22 train-00000-of-01357.parquet:21
+video 21 train-00001-of-01357.parquet:16
+video 22 train-00001-of-01357.parquet:22
+video 23 train-00001-of-01357.parquet:21
+video 23 train-00000-of-01357.parquet:22
+video 24 train-00000-of-01357.parquet:23
+video 25 train-00000-of-01357.parquet:24
+video 24 train-00001-of-01357.parquet:24
+video 26 train-00000-of-01357.parquet:26
+video 25 train-00001-of-01357.parquet:23
+video 27 train-00000-of-01357.parquet:27
+video 28 train-00000-of-01357.parquet:25
+video 26 train-00001-of-01357.parquet:25
+video 27 train-00001-of-01357.parquet:26
+video 29 train-00000-of-01357.parquet:29
+video 30 train-00000-of-01357.parquet:28
+video 31 train-00000-of-01357.parquet:31
+video 32 train-00000-of-01357.parquet:32
+video 33 train-00000-of-01357.parquet:30
+elapsed_s 4053.56
+videos 33
+errors 0
+frames 253918
+seconds 9144
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 491.75
+gpu_wait_s 0.91
+gpu_s 4040.11
+infer_frames_per_s 62.8
+wall_frames_per_s 62.6
+peak_gpu_mib 6226
+video 28 train-00001-of-01357.parquet:28
+video 29 train-00001-of-01357.parquet:29
+video 30 train-00001-of-01357.parquet:27
+video 31 train-00001-of-01357.parquet:30
+video 32 train-00001-of-01357.parquet:32
+video 33 train-00001-of-01357.parquet:31
+elapsed_s 4905.69
+videos 33
+errors 0
+frames 272410
+seconds 9662
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 563.44
+gpu_wait_s 0.83
+gpu_s 4889.60
+infer_frames_per_s 55.7
+wall_frames_per_s 55.5
+peak_gpu_mib 2293
+starting train-00002-of-01357.parquet train-00003-of-01357.parquet
+
+data/train-00002-of-01357.parquet: downloading bytes: ████▏ |  420MB, 31.7MB/s  
+data/train-00002-of-01357.parquet: downloading bytes: █████▌|  552MB, 47.1MB/s  
+data/train-00002-of-01357.parquet: reconstructing file:  34%|▎|  201MB /  593MB,
+data/train-00002-of-01357.parquet: downloading bytes: ██████|  593MB, 53.3MB/s  
+data/train-00002-of-01357.parquet: reconstructing file: 100%|█|  593MB /  593MB,
+
+data/train-00003-of-01357.parquet: downloading bytes: █████ |  463MB, 36.3MB/s  
+data/train-00003-of-01357.parquet: downloading bytes: █████▉|  545MB, 49.4MB/s  
+data/train-00003-of-01357.parquet: reconstructing file:  48%|▍|  268MB /  555MB,
+data/train-00003-of-01357.parquet: downloading bytes: ██████|  555MB, 51.3MB/s  
+data/train-00003-of-01357.parquet: reconstructing file: 100%|█|  555MB /  555MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2307 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4445 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00003-of-01357.parquet:0
+video 1 train-00002-of-01357.parquet:0
+video 2 train-00003-of-01357.parquet:1
+video 3 train-00003-of-01357.parquet:2
+video 4 train-00003-of-01357.parquet:3
+video 5 train-00003-of-01357.parquet:5
+video 6 train-00003-of-01357.parquet:4
+video 7 train-00003-of-01357.parquet:6
+video 2 train-00002-of-01357.parquet:1
+video 8 train-00003-of-01357.parquet:8
+video 3 train-00002-of-01357.parquet:3
+video 4 train-00002-of-01357.parquet:4
+video 5 train-00002-of-01357.parquet:5
+video 6 train-00002-of-01357.parquet:2
+video 9 train-00003-of-01357.parquet:9
+video 10 train-00003-of-01357.parquet:10
+video 11 train-00003-of-01357.parquet:7
+video 7 train-00002-of-01357.parquet:6
+video 8 train-00002-of-01357.parquet:7
+video 12 train-00003-of-01357.parquet:12
+video 9 train-00002-of-01357.parquet:8
+video 13 train-00003-of-01357.parquet:13
+video 14 train-00003-of-01357.parquet:11
+video 10 train-00002-of-01357.parquet:9
+video 15 train-00003-of-01357.parquet:14
+video 11 train-00002-of-01357.parquet:10
+video 16 train-00003-of-01357.parquet:16
+video 12 train-00002-of-01357.parquet:11
+video 13 train-00002-of-01357.parquet:12
+video 17 train-00003-of-01357.parquet:15
+video 14 train-00002-of-01357.parquet:14
+video 18 train-00003-of-01357.parquet:17
+video 15 train-00002-of-01357.parquet:13
+video 16 train-00002-of-01357.parquet:15
+video 19 train-00003-of-01357.parquet:18
+video 17 train-00002-of-01357.parquet:17
+video 18 train-00002-of-01357.parquet:16
+video 19 train-00002-of-01357.parquet:19
+video 20 train-00003-of-01357.parquet:19
+video 21 train-00003-of-01357.parquet:21
+video 22 train-00003-of-01357.parquet:20
+video 20 train-00002-of-01357.parquet:20
+video 23 train-00003-of-01357.parquet:23
+video 21 train-00002-of-01357.parquet:21
+video 24 train-00003-of-01357.parquet:24
+video 22 train-00002-of-01357.parquet:18
+video 25 train-00003-of-01357.parquet:25
+video 26 train-00003-of-01357.parquet:22
+video 23 train-00002-of-01357.parquet:22
+video 24 train-00002-of-01357.parquet:23
+video 27 train-00003-of-01357.parquet:27
+video 28 train-00003-of-01357.parquet:28
+video 29 train-00003-of-01357.parquet:29
+video 30 train-00003-of-01357.parquet:26
+video 25 train-00002-of-01357.parquet:25
+video 26 train-00002-of-01357.parquet:26
+video 27 train-00002-of-01357.parquet:24
+video 28 train-00002-of-01357.parquet:28
+video 29 train-00002-of-01357.parquet:27
+video 31 train-00003-of-01357.parquet:30
+video 30 train-00002-of-01357.parquet:30
+video 31 train-00002-of-01357.parquet:31
+video 32 train-00002-of-01357.parquet:29
+video 33 train-00002-of-01357.parquet:32
+elapsed_s 4793.88
+videos 33
+errors 0
+frames 314322
+seconds 11641
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 613.28
+gpu_wait_s 1.03
+gpu_s 4777.17
+infer_frames_per_s 65.8
+wall_frames_per_s 65.6
+peak_gpu_mib 2486
+video 32 train-00003-of-01357.parquet:31
+video 33 train-00003-of-01357.parquet:32
+elapsed_s 4862.41
+videos 33
+errors 0
+frames 268627
+seconds 9043
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 585.24
+gpu_wait_s 0.84
+gpu_s 4847.77
+infer_frames_per_s 55.4
+wall_frames_per_s 55.2
+peak_gpu_mib 2619
+starting train-00004-of-01357.parquet train-00005-of-01357.parquet
+
+data/train-00004-of-01357.parquet: downloading bytes: ████▉ |  400MB, 28.5MB/s  
+data/train-00004-of-01357.parquet: downloading bytes: █████▉|  488MB, 43.1MB/s  
+data/train-00004-of-01357.parquet: downloading bytes: ██████|  490MB, 44.2MB/s  
+data/train-00004-of-01357.parquet: reconstructing file: 100%|█|  491MB /  491MB,
+
+data/train-00005-of-01357.parquet: downloading bytes: █████▎|  486MB, 38.6MB/s  
+data/train-00005-of-01357.parquet: reconstructing file:  49%|▍|  268MB /  544MB 
+data/train-00005-of-01357.parquet: reconstructing file:  74%|▋|  402MB /  544MB,
+data/train-00005-of-01357.parquet: downloading bytes: ██████|  544MB, 49.6MB/s  
+data/train-00005-of-01357.parquet: reconstructing file: 100%|█|  544MB /  544MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00004-of-01357.parquet:1
+video 2 train-00004-of-01357.parquet:2
+video 3 train-00004-of-01357.parquet:0
+video 4 train-00004-of-01357.parquet:3
+video 1 train-00005-of-01357.parquet:1
+video 2 train-00005-of-01357.parquet:0
+video 5 train-00004-of-01357.parquet:4
+video 6 train-00004-of-01357.parquet:5
+video 3 train-00005-of-01357.parquet:3
+video 7 train-00004-of-01357.parquet:7
+video 4 train-00005-of-01357.parquet:4
+video 5 train-00005-of-01357.parquet:5
+video 8 train-00004-of-01357.parquet:6
+video 6 train-00005-of-01357.parquet:2
+video 9 train-00004-of-01357.parquet:8
+video 10 train-00004-of-01357.parquet:10
+video 11 train-00004-of-01357.parquet:11
+video 12 train-00004-of-01357.parquet:9
+video 7 train-00005-of-01357.parquet:6
+video 8 train-00005-of-01357.parquet:7
+video 13 train-00004-of-01357.parquet:13
+video 14 train-00004-of-01357.parquet:14
+video 9 train-00005-of-01357.parquet:9
+video 15 train-00004-of-01357.parquet:12
+video 10 train-00005-of-01357.parquet:8
+video 11 train-00005-of-01357.parquet:10
+video 12 train-00005-of-01357.parquet:12
+video 13 train-00005-of-01357.parquet:11
+video 16 train-00004-of-01357.parquet:15
+video 17 train-00004-of-01357.parquet:16
+video 14 train-00005-of-01357.parquet:14
+video 18 train-00004-of-01357.parquet:18
+video 15 train-00005-of-01357.parquet:13
+video 16 train-00005-of-01357.parquet:16
+video 19 train-00004-of-01357.parquet:17
+video 20 train-00004-of-01357.parquet:20
+video 21 train-00004-of-01357.parquet:19
+video 17 train-00005-of-01357.parquet:17
+video 18 train-00005-of-01357.parquet:15
+video 19 train-00005-of-01357.parquet:18
+video 22 train-00004-of-01357.parquet:22
+video 23 train-00004-of-01357.parquet:21
+video 24 train-00004-of-01357.parquet:24
+video 25 train-00004-of-01357.parquet:23
+video 20 train-00005-of-01357.parquet:20
+video 21 train-00005-of-01357.parquet:21
+video 26 train-00004-of-01357.parquet:26
+video 22 train-00005-of-01357.parquet:22
+video 27 train-00004-of-01357.parquet:25
+video 28 train-00004-of-01357.parquet:27
+video 23 train-00005-of-01357.parquet:19
+video 29 train-00004-of-01357.parquet:29
+video 30 train-00004-of-01357.parquet:28
+video 24 train-00005-of-01357.parquet:23
+video 31 train-00004-of-01357.parquet:31
+video 25 train-00005-of-01357.parquet:24
+video 26 train-00005-of-01357.parquet:26
+video 32 train-00004-of-01357.parquet:30
+video 33 train-00004-of-01357.parquet:32
+elapsed_s 3907.68
+videos 33
+errors 0
+frames 258667
+seconds 9256
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 523.75
+gpu_wait_s 0.87
+gpu_s 3895.20
+infer_frames_per_s 66.4
+wall_frames_per_s 66.2
+peak_gpu_mib 5825
+video 27 train-00005-of-01357.parquet:27
+video 28 train-00005-of-01357.parquet:25
+video 29 train-00005-of-01357.parquet:29
+video 30 train-00005-of-01357.parquet:28
+video 31 train-00005-of-01357.parquet:31
+video 32 train-00005-of-01357.parquet:30
+video 33 train-00005-of-01357.parquet:32
+elapsed_s 4847.08
+videos 33
+errors 0
+frames 264086
+seconds 9234
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 516.93
+gpu_wait_s 0.90
+gpu_s 4833.30
+infer_frames_per_s 54.6
+wall_frames_per_s 54.5
+peak_gpu_mib 5157
+starting train-00006-of-01357.parquet train-00007-of-01357.parquet
+
+data/train-00006-of-01357.parquet: downloading bytes: █████▉|  535MB, 47.7MB/s  
+data/train-00006-of-01357.parquet: reconstructing file:  63%|▋|  335MB /  536MB 
+data/train-00006-of-01357.parquet: downloading bytes: ██████|  535MB, 49.3MB/s  
+data/train-00006-of-01357.parquet: reconstructing file: 100%|█|  536MB /  536MB,
+
+data/train-00007-of-01357.parquet: downloading bytes: █████▍|  371MB, 28.2MB/s  
+data/train-00007-of-01357.parquet: reconstructing file:  16%|▏| 67.1MB /  412MB 
+data/train-00007-of-01357.parquet: reconstructing file:  65%|▋|  268MB /  412MB,
+data/train-00007-of-01357.parquet: downloading bytes: ██████|  412MB, 38.0MB/s  
+data/train-00007-of-01357.parquet: reconstructing file: 100%|█|  412MB /  412MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00006-of-01357.parquet:1
+video 1 train-00007-of-01357.parquet:1
+video 2 train-00006-of-01357.parquet:2
+video 2 train-00007-of-01357.parquet:2
+video 3 train-00007-of-01357.parquet:3
+video 4 train-00007-of-01357.parquet:0
+video 3 train-00006-of-01357.parquet:3
+video 4 train-00006-of-01357.parquet:0
+video 5 train-00007-of-01357.parquet:5
+video 6 train-00007-of-01357.parquet:4
+video 5 train-00006-of-01357.parquet:4
+video 6 train-00006-of-01357.parquet:6
+video 7 train-00007-of-01357.parquet:7
+video 7 train-00006-of-01357.parquet:5
+video 8 train-00007-of-01357.parquet:6
+video 8 train-00006-of-01357.parquet:7
+video 9 train-00006-of-01357.parquet:8
+video 10 train-00006-of-01357.parquet:10
+video 11 train-00006-of-01357.parquet:11
+video 9 train-00007-of-01357.parquet:9
+video 10 train-00007-of-01357.parquet:8
+video 11 train-00007-of-01357.parquet:11
+video 12 train-00006-of-01357.parquet:9
+video 13 train-00006-of-01357.parquet:12
+video 12 train-00007-of-01357.parquet:12
+video 14 train-00006-of-01357.parquet:14
+video 13 train-00007-of-01357.parquet:13
+video 14 train-00007-of-01357.parquet:14
+video 15 train-00007-of-01357.parquet:15
+video 16 train-00007-of-01357.parquet:16
+video 17 train-00007-of-01357.parquet:10
+video 15 train-00006-of-01357.parquet:13
+video 16 train-00006-of-01357.parquet:15
+video 17 train-00006-of-01357.parquet:17
+video 18 train-00006-of-01357.parquet:16
+video 19 train-00006-of-01357.parquet:18
+video 18 train-00007-of-01357.parquet:17
+video 20 train-00006-of-01357.parquet:19
+video 21 train-00006-of-01357.parquet:21
+video 19 train-00007-of-01357.parquet:18
+video 20 train-00007-of-01357.parquet:19
+video 21 train-00007-of-01357.parquet:21
+video 22 train-00007-of-01357.parquet:20
+video 22 train-00006-of-01357.parquet:20
+video 23 train-00006-of-01357.parquet:22
+video 23 train-00007-of-01357.parquet:23
+video 24 train-00006-of-01357.parquet:23
+video 24 train-00007-of-01357.parquet:22
+video 25 train-00006-of-01357.parquet:25
+video 26 train-00006-of-01357.parquet:24
+video 27 train-00006-of-01357.parquet:27
+video 25 train-00007-of-01357.parquet:24
+video 28 train-00006-of-01357.parquet:26
+video 29 train-00006-of-01357.parquet:28
+video 26 train-00007-of-01357.parquet:25
+video 30 train-00006-of-01357.parquet:29
+video 31 train-00006-of-01357.parquet:30
+video 27 train-00007-of-01357.parquet:26
+video 28 train-00007-of-01357.parquet:27
+video 29 train-00007-of-01357.parquet:29
+video 30 train-00007-of-01357.parquet:28
+video 31 train-00007-of-01357.parquet:31
+video 32 train-00006-of-01357.parquet:31
+video 32 train-00007-of-01357.parquet:30
+video 33 train-00006-of-01357.parquet:32
+elapsed_s 3962.55
+videos 33
+errors 0
+frames 259823
+seconds 9488
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 535.07
+gpu_wait_s 0.79
+gpu_s 3950.14
+infer_frames_per_s 65.8
+wall_frames_per_s 65.6
+peak_gpu_mib 6360
+video 33 train-00007-of-01357.parquet:32
+elapsed_s 3999.14
+videos 33
+errors 0
+frames 222312
+seconds 7579
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 457.53
+gpu_wait_s 0.69
+gpu_s 3986.00
+infer_frames_per_s 55.8
+wall_frames_per_s 55.6
+peak_gpu_mib 3287
+starting train-00008-of-01357.parquet train-00009-of-01357.parquet
+
+data/train-00008-of-01357.parquet: downloading bytes: ███▉  |  359MB, 25.9MB/s  
+data/train-00008-of-01357.parquet: downloading bytes: █████▏|  476MB, 39.8MB/s  
+data/train-00008-of-01357.parquet: downloading bytes: █████▉|  550MB, 50.1MB/s  
+data/train-00008-of-01357.parquet: downloading bytes: ██████|  550MB, 50.5MB/s  
+data/train-00008-of-01357.parquet: reconstructing file: 100%|█|  550MB /  550MB,
+
+data/train-00009-of-01357.parquet: downloading bytes: █████▏|  366MB, 30.3MB/s  
+data/train-00009-of-01357.parquet: reconstructing file:  16%|▏| 67.0MB /  423MB 
+data/train-00009-of-01357.parquet: downloading bytes: █████▉|  422MB, 38.3MB/s  
+data/train-00009-of-01357.parquet: downloading bytes: ██████|  423MB, 38.5MB/s  
+data/train-00009-of-01357.parquet: reconstructing file: 100%|█|  423MB /  423MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00008-of-01357.parquet:1
+video 2 train-00008-of-01357.parquet:0
+video 1 train-00009-of-01357.parquet:0
+video 2 train-00009-of-01357.parquet:2
+video 3 train-00008-of-01357.parquet:2
+video 3 train-00009-of-01357.parquet:1
+video 4 train-00008-of-01357.parquet:3
+video 4 train-00009-of-01357.parquet:4
+video 5 train-00008-of-01357.parquet:5
+video 6 train-00008-of-01357.parquet:4
+video 7 train-00008-of-01357.parquet:6
+video 5 train-00009-of-01357.parquet:3
+video 6 train-00009-of-01357.parquet:6
+video 7 train-00009-of-01357.parquet:7
+video 8 train-00008-of-01357.parquet:8
+video 8 train-00009-of-01357.parquet:5
+video 9 train-00008-of-01357.parquet:7
+video 9 train-00009-of-01357.parquet:9
+video 10 train-00009-of-01357.parquet:10
+video 10 train-00008-of-01357.parquet:9
+video 11 train-00008-of-01357.parquet:11
+video 11 train-00009-of-01357.parquet:8
+video 12 train-00008-of-01357.parquet:12
+video 12 train-00009-of-01357.parquet:12
+video 13 train-00008-of-01357.parquet:10
+video 13 train-00009-of-01357.parquet:11
+video 14 train-00009-of-01357.parquet:13
+video 15 train-00009-of-01357.parquet:14
+video 16 train-00009-of-01357.parquet:15
+video 14 train-00008-of-01357.parquet:13
+video 15 train-00008-of-01357.parquet:14
+video 16 train-00008-of-01357.parquet:16
+video 17 train-00008-of-01357.parquet:15
+video 18 train-00008-of-01357.parquet:17
+video 17 train-00009-of-01357.parquet:16
+video 19 train-00008-of-01357.parquet:19
+video 18 train-00009-of-01357.parquet:17
+video 20 train-00008-of-01357.parquet:20
+video 21 train-00008-of-01357.parquet:18
+video 19 train-00009-of-01357.parquet:18
+video 20 train-00009-of-01357.parquet:20
+video 21 train-00009-of-01357.parquet:21
+video 22 train-00008-of-01357.parquet:22
+video 23 train-00008-of-01357.parquet:23
+video 22 train-00009-of-01357.parquet:19
+video 24 train-00008-of-01357.parquet:24
+video 23 train-00009-of-01357.parquet:22
+video 25 train-00008-of-01357.parquet:21
+video 24 train-00009-of-01357.parquet:24
+video 26 train-00008-of-01357.parquet:26
+video 25 train-00009-of-01357.parquet:25
+video 26 train-00009-of-01357.parquet:23
+video 27 train-00008-of-01357.parquet:27
+video 28 train-00008-of-01357.parquet:28
+video 27 train-00009-of-01357.parquet:26
+video 29 train-00008-of-01357.parquet:25
+video 28 train-00009-of-01357.parquet:27
+video 30 train-00008-of-01357.parquet:29
+video 31 train-00008-of-01357.parquet:31
+video 29 train-00009-of-01357.parquet:29
+video 30 train-00009-of-01357.parquet:28
+video 32 train-00008-of-01357.parquet:32
+video 33 train-00008-of-01357.parquet:30
+elapsed_s 3836.15
+videos 33
+errors 0
+frames 252599
+seconds 9419
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 524.32
+gpu_wait_s 0.79
+gpu_s 3822.90
+infer_frames_per_s 66.1
+wall_frames_per_s 65.8
+peak_gpu_mib 3154
+video 31 train-00009-of-01357.parquet:30
+video 32 train-00009-of-01357.parquet:32
+video 33 train-00009-of-01357.parquet:31
+elapsed_s 3915.79
+videos 33
+errors 0
+frames 215982
+seconds 7699
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 444.83
+gpu_wait_s 0.74
+gpu_s 3906.10
+infer_frames_per_s 55.3
+wall_frames_per_s 55.2
+peak_gpu_mib 4088
+starting train-00010-of-01357.parquet train-00011-of-01357.parquet
+
+data/train-00010-of-01357.parquet: downloading bytes: █████▍|  416MB, 35.8MB/s  
+data/train-00010-of-01357.parquet: reconstructing file:  15%|▏| 67.1MB /  462MB 
+data/train-00010-of-01357.parquet: downloading bytes: ██████|  461MB, 41.3MB/s  
+data/train-00010-of-01357.parquet: reconstructing file: 100%|█|  462MB /  462MB,
+
+data/train-00011-of-01357.parquet: downloading bytes: █████▉|  499MB, 44.9MB/s  
+data/train-00011-of-01357.parquet: reconstructing file:  53%|▌|  268MB /  507MB 
+data/train-00011-of-01357.parquet: downloading bytes: ██████|  506MB, 46.8MB/s  
+data/train-00011-of-01357.parquet: reconstructing file: 100%|█|  507MB /  507MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00011-of-01357.parquet:0
+video 2 train-00011-of-01357.parquet:2
+video 1 train-00010-of-01357.parquet:1
+video 2 train-00010-of-01357.parquet:2
+video 3 train-00011-of-01357.parquet:1
+video 3 train-00010-of-01357.parquet:0
+video 4 train-00010-of-01357.parquet:4
+video 5 train-00010-of-01357.parquet:3
+video 6 train-00010-of-01357.parquet:6
+video 7 train-00010-of-01357.parquet:5
+video 4 train-00011-of-01357.parquet:4
+video 5 train-00011-of-01357.parquet:3
+video 8 train-00010-of-01357.parquet:8
+video 6 train-00011-of-01357.parquet:6
+video 7 train-00011-of-01357.parquet:5
+video 9 train-00010-of-01357.parquet:7
+video 10 train-00010-of-01357.parquet:10
+video 8 train-00011-of-01357.parquet:8
+video 11 train-00010-of-01357.parquet:11
+video 9 train-00011-of-01357.parquet:7
+video 12 train-00010-of-01357.parquet:12
+video 13 train-00010-of-01357.parquet:9
+video 14 train-00010-of-01357.parquet:14
+video 15 train-00010-of-01357.parquet:13
+video 16 train-00010-of-01357.parquet:16
+video 10 train-00011-of-01357.parquet:9
+video 17 train-00010-of-01357.parquet:15
+video 11 train-00011-of-01357.parquet:10
+video 18 train-00010-of-01357.parquet:18
+video 12 train-00011-of-01357.parquet:11
+video 19 train-00010-of-01357.parquet:19
+video 20 train-00010-of-01357.parquet:17
+video 21 train-00010-of-01357.parquet:21
+video 13 train-00011-of-01357.parquet:12
+video 22 train-00010-of-01357.parquet:22
+video 14 train-00011-of-01357.parquet:13
+video 23 train-00010-of-01357.parquet:23
+video 15 train-00011-of-01357.parquet:14
+video 24 train-00010-of-01357.parquet:20
+video 25 train-00010-of-01357.parquet:25
+video 26 train-00010-of-01357.parquet:24
+video 16 train-00011-of-01357.parquet:16
+video 27 train-00010-of-01357.parquet:27
+video 17 train-00011-of-01357.parquet:17
+video 18 train-00011-of-01357.parquet:15
+video 28 train-00010-of-01357.parquet:28
+video 29 train-00010-of-01357.parquet:26
+video 19 train-00011-of-01357.parquet:18
+video 30 train-00010-of-01357.parquet:29
+video 20 train-00011-of-01357.parquet:20
+video 21 train-00011-of-01357.parquet:19
+video 22 train-00011-of-01357.parquet:21
+video 31 train-00010-of-01357.parquet:30
+video 32 train-00010-of-01357.parquet:31
+video 23 train-00011-of-01357.parquet:22
+video 33 train-00010-of-01357.parquet:32
+elapsed_s 3974.97
+videos 33
+errors 0
+frames 259653
+seconds 9235
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 551.88
+gpu_wait_s 0.94
+gpu_s 3960.79
+infer_frames_per_s 65.6
+wall_frames_per_s 65.3
+peak_gpu_mib 2886
+video 24 train-00011-of-01357.parquet:23
+video 25 train-00011-of-01357.parquet:25
+video 26 train-00011-of-01357.parquet:24
+video 27 train-00011-of-01357.parquet:27
+video 28 train-00011-of-01357.parquet:28
+video 29 train-00011-of-01357.parquet:26
+video 30 train-00011-of-01357.parquet:29
+video 31 train-00011-of-01357.parquet:31
+video 32 train-00011-of-01357.parquet:30
+video 33 train-00011-of-01357.parquet:32
+elapsed_s 5369.25
+videos 33
+errors 0
+frames 294462
+seconds 10450
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 562.76
+gpu_wait_s 0.99
+gpu_s 5353.42
+infer_frames_per_s 55.0
+wall_frames_per_s 54.8
+peak_gpu_mib 4088
+starting train-00012-of-01357.parquet train-00013-of-01357.parquet
+
+data/train-00012-of-01357.parquet: downloading bytes: █████▏|  558MB, 43.1MB/s  
+data/train-00012-of-01357.parquet: reconstructing file:  83%|▊|  537MB /  646MB 
+data/train-00012-of-01357.parquet: downloading bytes: ██████|  645MB, 59.4MB/s  
+data/train-00012-of-01357.parquet: reconstructing file: 100%|█|  646MB /  646MB,
+
+data/train-00013-of-01357.parquet: downloading bytes: █████▍|  398MB, 35.8MB/s  
+data/train-00013-of-01357.parquet: reconstructing file:  76%|▊|  335MB /  440MB 
+data/train-00013-of-01357.parquet: downloading bytes: ██████|  439MB, 38.1MB/s  
+data/train-00013-of-01357.parquet: reconstructing file: 100%|█|  440MB /  440MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2307 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4445 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00013-of-01357.parquet:0
+video 1 train-00012-of-01357.parquet:0
+video 2 train-00013-of-01357.parquet:1
+video 3 train-00013-of-01357.parquet:3
+video 4 train-00013-of-01357.parquet:4
+video 2 train-00012-of-01357.parquet:1
+video 5 train-00013-of-01357.parquet:2
+video 3 train-00012-of-01357.parquet:2
+video 4 train-00012-of-01357.parquet:3
+video 6 train-00013-of-01357.parquet:6
+video 7 train-00013-of-01357.parquet:5
+video 5 train-00012-of-01357.parquet:5
+video 8 train-00013-of-01357.parquet:8
+video 9 train-00013-of-01357.parquet:9
+video 6 train-00012-of-01357.parquet:4
+video 10 train-00013-of-01357.parquet:10
+video 11 train-00013-of-01357.parquet:7
+video 12 train-00013-of-01357.parquet:12
+video 7 train-00012-of-01357.parquet:6
+video 13 train-00013-of-01357.parquet:11
+video 14 train-00013-of-01357.parquet:14
+video 15 train-00013-of-01357.parquet:13
+video 16 train-00013-of-01357.parquet:15
+video 8 train-00012-of-01357.parquet:7
+video 17 train-00013-of-01357.parquet:17
+video 9 train-00012-of-01357.parquet:9
+video 18 train-00013-of-01357.parquet:16
+video 10 train-00012-of-01357.parquet:8
+video 11 train-00012-of-01357.parquet:10
+video 12 train-00012-of-01357.parquet:11
+video 19 train-00013-of-01357.parquet:19
+video 20 train-00013-of-01357.parquet:18
+video 13 train-00012-of-01357.parquet:13
+video 21 train-00013-of-01357.parquet:20
+video 22 train-00013-of-01357.parquet:22
+video 14 train-00012-of-01357.parquet:12
+video 23 train-00013-of-01357.parquet:21
+video 24 train-00013-of-01357.parquet:24
+video 15 train-00012-of-01357.parquet:14
+video 25 train-00013-of-01357.parquet:25
+video 26 train-00013-of-01357.parquet:26
+video 27 train-00013-of-01357.parquet:23
+video 16 train-00012-of-01357.parquet:15
+video 17 train-00012-of-01357.parquet:16
+video 28 train-00013-of-01357.parquet:28
+video 18 train-00012-of-01357.parquet:18
+video 19 train-00012-of-01357.parquet:17
+video 20 train-00012-of-01357.parquet:19
+video 29 train-00013-of-01357.parquet:27
+video 21 train-00012-of-01357.parquet:21
+video 22 train-00012-of-01357.parquet:22
+video 23 train-00012-of-01357.parquet:23
+video 24 train-00012-of-01357.parquet:20
+video 30 train-00013-of-01357.parquet:29
+video 31 train-00013-of-01357.parquet:30
+video 25 train-00012-of-01357.parquet:25
+video 26 train-00012-of-01357.parquet:26
+video 27 train-00012-of-01357.parquet:24
+video 28 train-00012-of-01357.parquet:27
+video 32 train-00013-of-01357.parquet:32
+video 29 train-00012-of-01357.parquet:28
+video 30 train-00012-of-01357.parquet:30
+video 33 train-00013-of-01357.parquet:31
+elapsed_s 4540.62
+videos 33
+errors 0
+frames 246696
+seconds 8691
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 476.96
+gpu_wait_s 0.74
+gpu_s 4527.58
+infer_frames_per_s 54.5
+wall_frames_per_s 54.3
+peak_gpu_mib 3287
+video 31 train-00012-of-01357.parquet:29
+video 32 train-00012-of-01357.parquet:31
+video 33 train-00012-of-01357.parquet:32
+elapsed_s 5194.97
+videos 33
+errors 0
+frames 338262
+seconds 11644
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 656.51
+gpu_wait_s 1.03
+gpu_s 5178.10
+infer_frames_per_s 65.3
+wall_frames_per_s 65.1
+peak_gpu_mib 2293
+starting train-00014-of-01357.parquet train-00015-of-01357.parquet
+
+data/train-00014-of-01357.parquet: downloading bytes: █████▌|  429MB, 30.9MB/s  
+data/train-00014-of-01357.parquet: reconstructing file:  72%|▋|  335MB /  467MB 
+data/train-00014-of-01357.parquet: downloading bytes: ██████|  466MB, 44.0MB/s  
+data/train-00014-of-01357.parquet: reconstructing file: 100%|█|  467MB /  467MB,
+
+data/train-00015-of-01357.parquet: downloading bytes: █████▍|  447MB, 38.0MB/s  
+data/train-00015-of-01357.parquet: reconstructing file:  27%|▎|  134MB /  497MB 
+data/train-00015-of-01357.parquet: downloading bytes: ██████|  497MB, 43.9MB/s  
+data/train-00015-of-01357.parquet: reconstructing file: 100%|█|  497MB /  497MB,
+probing batch size
+probing batch 8
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 16 fits (2308 MiB)
+probing batch 32
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 32 fits (4446 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00015-of-01357.parquet:1
+video 2 train-00015-of-01357.parquet:0
+video 3 train-00015-of-01357.parquet:2
+video 1 train-00014-of-01357.parquet:1
+video 2 train-00014-of-01357.parquet:2
+video 3 train-00014-of-01357.parquet:0
+video 4 train-00015-of-01357.parquet:3
+video 4 train-00014-of-01357.parquet:4
+video 5 train-00014-of-01357.parquet:5
+video 5 train-00015-of-01357.parquet:5
+video 6 train-00014-of-01357.parquet:6
+video 7 train-00014-of-01357.parquet:3
+video 6 train-00015-of-01357.parquet:4
+video 8 train-00014-of-01357.parquet:7
+video 7 train-00015-of-01357.parquet:6
+video 8 train-00015-of-01357.parquet:8
+video 9 train-00015-of-01357.parquet:7
+video 9 train-00014-of-01357.parquet:9
+video 10 train-00014-of-01357.parquet:8
+video 10 train-00015-of-01357.parquet:9
+video 11 train-00014-of-01357.parquet:10
+video 11 train-00015-of-01357.parquet:10
+video 12 train-00014-of-01357.parquet:11
+video 13 train-00014-of-01357.parquet:13

@@ -1,0 +1,166 @@
+data/train-00000-of-01357.parquet: downloading bytes: ██▏   |  184MB, 8.97MB/s  
+data/train-00000-of-01357.parquet: downloading bytes: ███▍  |  282MB, 22.9MB/s  
+data/train-00000-of-01357.parquet: downloading bytes: █████▉|  490MB, 42.6MB/s  
+data/train-00000-of-01357.parquet: downloading bytes: ██████|  493MB, 44.4MB/s  
+data/train-00000-of-01357.parquet: reconstructing file: 100%|█|  494MB /  494MB,
++ /usr/bin/python3 /kaggle/working/alethia-ai/run.py --input /kaggle/working/finevideo_run/gate/shard --weights /kaggle/working/alethia-ai/yolo11l.pt --workers 2 --fp32 --output /kaggle/working/finevideo_run/gate/reference.jsonl
+probing batch size
+probing batch 8
+batch 8 fits (13312 MiB)
+probing batch 16
+batch 16 fits (13992 MiB)
+using batch 16
+video 1 train-00000-of-01357.parquet:0
+video 2 train-00000-of-01357.parquet:2
+video 3 train-00000-of-01357.parquet:1
+video 4 train-00000-of-01357.parquet:4
+video 5 train-00000-of-01357.parquet:5
+video 6 train-00000-of-01357.parquet:3
+video 7 train-00000-of-01357.parquet:6
+video 8 train-00000-of-01357.parquet:7
+video 9 train-00000-of-01357.parquet:8
+video 10 train-00000-of-01357.parquet:10
+video 11 train-00000-of-01357.parquet:9
+video 12 train-00000-of-01357.parquet:12
+video 13 train-00000-of-01357.parquet:11
+video 14 train-00000-of-01357.parquet:13
+video 15 train-00000-of-01357.parquet:15
+video 16 train-00000-of-01357.parquet:16
+video 17 train-00000-of-01357.parquet:14
+video 18 train-00000-of-01357.parquet:17
+video 19 train-00000-of-01357.parquet:19
+video 20 train-00000-of-01357.parquet:20
+video 21 train-00000-of-01357.parquet:18
+video 22 train-00000-of-01357.parquet:21
+video 23 train-00000-of-01357.parquet:22
+video 24 train-00000-of-01357.parquet:24
+video 25 train-00000-of-01357.parquet:23
+video 26 train-00000-of-01357.parquet:26
+video 27 train-00000-of-01357.parquet:25
+video 28 train-00000-of-01357.parquet:27
+video 29 train-00000-of-01357.parquet:29
+video 30 train-00000-of-01357.parquet:28
+video 31 train-00000-of-01357.parquet:31
+video 32 train-00000-of-01357.parquet:32
+video 33 train-00000-of-01357.parquet:30
+elapsed_s 8933.26
+videos 33
+errors 0
+frames 253918
+seconds 9144
+batch 16
+workers 2
+device Tesla T4 (14912 MiB)
+half False
+nvdec_importable False
+decode_thread_s 439.50
+gpu_wait_s 1.30
+gpu_s 8919.30
+infer_frames_per_s 28.5
+wall_frames_per_s 28.4
+peak_gpu_mib 13687
++ /usr/bin/python3 /kaggle/working/alethia-ai/run.py --input /kaggle/working/finevideo_run/gate/shard --weights /kaggle/working/alethia-ai/yolo11l.pt --workers 2 --output /kaggle/working/finevideo_run/gate/fast.jsonl
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2307 MiB)
+probing batch 32
+batch 32 fits (4445 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00000-of-01357.parquet:0
+video 2 train-00000-of-01357.parquet:2
+video 3 train-00000-of-01357.parquet:1
+video 4 train-00000-of-01357.parquet:4
+video 5 train-00000-of-01357.parquet:5
+video 6 train-00000-of-01357.parquet:3
+video 7 train-00000-of-01357.parquet:6
+video 8 train-00000-of-01357.parquet:7
+video 9 train-00000-of-01357.parquet:8
+video 10 train-00000-of-01357.parquet:10
+video 11 train-00000-of-01357.parquet:9
+video 12 train-00000-of-01357.parquet:12
+video 13 train-00000-of-01357.parquet:11
+video 14 train-00000-of-01357.parquet:13
+video 15 train-00000-of-01357.parquet:15
+video 16 train-00000-of-01357.parquet:16
+video 17 train-00000-of-01357.parquet:14
+video 18 train-00000-of-01357.parquet:17
+video 19 train-00000-of-01357.parquet:19
+video 20 train-00000-of-01357.parquet:20
+video 21 train-00000-of-01357.parquet:18
+video 22 train-00000-of-01357.parquet:21
+video 23 train-00000-of-01357.parquet:23
+video 24 train-00000-of-01357.parquet:22
+video 25 train-00000-of-01357.parquet:24
+video 26 train-00000-of-01357.parquet:26
+video 27 train-00000-of-01357.parquet:25
+video 28 train-00000-of-01357.parquet:27
+video 29 train-00000-of-01357.parquet:29
+video 30 train-00000-of-01357.parquet:28
+video 31 train-00000-of-01357.parquet:31
+video 32 train-00000-of-01357.parquet:32
+video 33 train-00000-of-01357.parquet:30
+elapsed_s 4246.45
+videos 33
+errors 0
+frames 253918
+seconds 9144
+batch 48
+workers 2
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 411.13
+gpu_wait_s 0.71
+gpu_s 4234.46
+infer_frames_per_s 60.0
+wall_frames_per_s 59.8
+peak_gpu_mib 6226
++ /usr/bin/python3 /kaggle/working/alethia-ai/validate.py /kaggle/working/finevideo_run/gate/reference.jsonl /kaggle/working/finevideo_run/gate/fast.jsonl --gate
+seconds 9144
+object_micro_f1 0.9999
+object_precision 0.9999
+object_recall 0.9999
+f1_person 0.9998
+f1_car 1.0000
+f1_dog 1.0000
+f1_laptop 1.0000
+f1_cell_phone 1.0000
+people_exact 0.9981
+people_within_1 1.0000
+reference_error_videos 0
+prediction_error_videos 0
+GATE PASS
++ /usr/bin/python3 /kaggle/working/alethia-ai/run.py --input /kaggle/working/finevideo_run/gate/damaged --output /kaggle/working/finevideo_run/gate/damaged.jsonl --weights /kaggle/working/alethia-ai/yolo11l.pt --workers 1
+probing batch size
+probing batch 8
+batch 8 fits (1117 MiB)
+probing batch 16
+batch 16 fits (2307 MiB)
+probing batch 32
+batch 32 fits (4445 MiB)
+probing batch 48
+batch 48 fits (6582 MiB)
+using batch 48
+video 1 train-00999-of-01357.parquet:0
+elapsed_s 0.37
+videos 1
+errors 1
+frames 0
+seconds 0
+batch 48
+workers 1
+device Tesla T4 (14912 MiB)
+half True
+nvdec_importable False
+decode_thread_s 0.00
+gpu_wait_s 0.00
+gpu_s 0.00
+infer_frames_per_s 0.0
+wall_frames_per_s 0.0
+peak_gpu_mib 169
+DAMAGED PASS
+Gate passed. Turn notebook internet OFF and rerun one shard with run.py before the full 50.
