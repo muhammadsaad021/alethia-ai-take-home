@@ -1,0 +1,233 @@
+[
+  {
+    "shards": [
+      "train-00000-of-01357.parquet",
+      "train-00001-of-01357.parquet"
+    ],
+    "seconds": 4940.956,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00002-of-01357.parquet",
+      "train-00003-of-01357.parquet"
+    ],
+    "seconds": 4902.958,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00004-of-01357.parquet",
+      "train-00005-of-01357.parquet"
+    ],
+    "seconds": 4887.334,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00006-of-01357.parquet",
+      "train-00007-of-01357.parquet"
+    ],
+    "seconds": 4038.804,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00008-of-01357.parquet",
+      "train-00009-of-01357.parquet"
+    ],
+    "seconds": 3955.178,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00010-of-01357.parquet",
+      "train-00011-of-01357.parquet"
+    ],
+    "seconds": 5409.021,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00012-of-01357.parquet",
+      "train-00013-of-01357.parquet"
+    ],
+    "seconds": 5226.928,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00015-of-01357.parquet",
+      "train-00016-of-01357.parquet"
+    ],
+    "seconds": 13.681,
+    "ok": false
+  },
+  {
+    "shards": [
+      "train-00015-of-01357.parquet",
+      "train-00016-of-01357.parquet"
+    ],
+    "seconds": 14.165,
+    "ok": false
+  },
+  {
+    "shards": [
+      "train-00015-of-01357.parquet",
+      "train-00016-of-01357.parquet"
+    ],
+    "seconds": 7.081,
+    "ok": false
+  },
+  {
+    "shards": [
+      "train-00015-of-01357.parquet",
+      "train-00016-of-01357.parquet"
+    ],
+    "seconds": 8.242,
+    "ok": false
+  },
+  {
+    "shards": [
+      "train-00015-of-01357.parquet",
+      "train-00016-of-01357.parquet"
+    ],
+    "seconds": 5099.97,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00017-of-01357.parquet",
+      "train-00018-of-01357.parquet"
+    ],
+    "seconds": 4448.302,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00019-of-01357.parquet",
+      "train-00020-of-01357.parquet"
+    ],
+    "seconds": 4390.246,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00021-of-01357.parquet",
+      "train-00022-of-01357.parquet"
+    ],
+    "seconds": 4332.973,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00023-of-01357.parquet",
+      "train-00024-of-01357.parquet"
+    ],
+    "seconds": 4013.383,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00025-of-01357.parquet",
+      "train-00026-of-01357.parquet"
+    ],
+    "seconds": 4442.742,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00027-of-01357.parquet",
+      "train-00028-of-01357.parquet"
+    ],
+    "seconds": 4034.439,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00029-of-01357.parquet",
+      "train-00030-of-01357.parquet"
+    ],
+    "seconds": 4467.09,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00031-of-01357.parquet",
+      "train-00032-of-01357.parquet"
+    ],
+    "seconds": 4487.49,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00033-of-01357.parquet",
+      "train-00034-of-01357.parquet"
+    ],
+    "seconds": 4771.378,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00035-of-01357.parquet",
+      "train-00036-of-01357.parquet"
+    ],
+    "seconds": 4618.517,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00037-of-01357.parquet",
+      "train-00038-of-01357.parquet"
+    ],
+    "seconds": 4040.061,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00039-of-01357.parquet",
+      "train-00040-of-01357.parquet"
+    ],
+    "seconds": 5044.218,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00041-of-01357.parquet",
+      "train-00042-of-01357.parquet"
+    ],
+    "seconds": 4770.336,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00043-of-01357.parquet",
+      "train-00044-of-01357.parquet"
+    ],
+    "seconds": 4956.613,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00045-of-01357.parquet",
+      "train-00046-of-01357.parquet"
+    ],
+    "seconds": 3843.58,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00047-of-01357.parquet",
+      "train-00048-of-01357.parquet"
+    ],
+    "seconds": 3896.695,
+    "ok": true
+  },
+  {
+    "shards": [
+      "train-00049-of-01357.parquet"
+    ],
+    "seconds": 3941.438,
+    "ok": true
+  }
+]
